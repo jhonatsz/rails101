@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
 
+  # routes handler for microposts
   resources :microposts
 
+
+  # routes handler for gadgets
+  resources :gadgets
+  
+  # routes handler for users
   resources :users
 
+  # main root of the apllication
   root 'application#hello'
 
   get 'goodbye' => 'application#goodbye'

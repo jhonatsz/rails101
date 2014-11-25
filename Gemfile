@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'spring',        group: :development
 
 
-
+## Setup for use of development
 group :development, :test do
   gem 'sqlite3', '1.3.9'
   gem 'byebug', '3.4.0'
@@ -35,6 +35,8 @@ group :development, :test do
   gem 'spring', '1.1.3'
 end
 
+
+## Setup for use of production
 group :production do
   gem 'pg', '0.17.1'
   gem 'rails_12factor', '0.0.2'
